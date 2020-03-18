@@ -14,7 +14,3 @@ export const AppHeader = styled.header`
   font-size: calc(10px + 2vmin);
   color: white;
 `
-
-export const bas = "SARAYUTH"
-
-export const nu = (x, y) => x + y

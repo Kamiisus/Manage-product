@@ -32,14 +32,12 @@ class List extends React.Component {
         const { product } = this.state
         console.log(product, '==product')
       return (
-        <div>
+        <div> 
             {
                 product.map(val => {
-                return <p key={val.store_id} key_id={val.store_id}>{val.store_name}</p>
+                return <tr key={val.store_id} key_id={val.store_id}> <td>Product : {val.store_name} </td><td> Branch : {val.branch} </td><td> Quality : {val.qty}</td><td> Price : {val.price}  </td></tr>
                 })
             }
-          <h1>Move the mouse around!</h1>
-          <p>The current mouse position is ({this.state.x}, {this.state.y})</p>
         </div>
       );
     }
